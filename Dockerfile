@@ -3,9 +3,9 @@ RUN npm install -g yarn
 
 RUN git clone https://github.com/sergproua/ng2-admin.git /var/www \
     && cd /var/www \
-    && yarn install --global rimraf \
+    && yarn global add rimraf \
     && yarn run clean \
-    && yarn install --global webpack webpack-dev-server typescript@2.1.5 \
+    && yarn global add webpack webpack-dev-server typescript@2.1.5 \
     && yarn install \
     && yarn run build:prod:aot
 
