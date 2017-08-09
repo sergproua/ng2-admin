@@ -11,4 +11,4 @@ RUN git clone https://github.com/sergproua/ng2-admin.git /var/www \
 EXPOSE 4200
 
 WORKDIR /var/www
-ENTRYPOINT ["yarn", "start"]
+ENTRYPOINT ["yarn", "start-dev"]
