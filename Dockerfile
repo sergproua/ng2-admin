@@ -7,9 +7,9 @@ RUN git clone https://github.com/sergproua/ng2-admin.git /var/www \
     && yarn run clean \
     && yarn global add webpack webpack-dev-server typescript@2.1.5 \
     && yarn install \
-    && yarn run build:prod:aot
+    && yarn start
 
 EXPOSE 4200
 
 WORKDIR /var/www
-ENTRYPOINT ["yarn", "run", "start:prod"]
+ENTRYPOINT ["yarn", "start"]
